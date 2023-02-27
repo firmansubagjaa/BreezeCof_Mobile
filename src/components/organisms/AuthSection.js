@@ -1,36 +1,34 @@
+import { useNavigation } from '@react-navigation/native'
 import React from 'react'
-import { Image, View, Text, StyleSheet } from 'react-native'
+import { Image, View } from 'react-native'
 import ButtonPrimary from '../atoms/buttonPrimary'
 import ButtonSecondary from '../atoms/buttonSecondary'
 import Heading from '../atoms/heading'
+import SubHeading from '../atoms/subHeading'
 import Container from '../templates/viewMain'
 
-const styles = StyleSheet.create({
-  heading: {
-    fontSize: 20,
-    textAlign: 'center',
-    marginLeft: 30,
-    marginRight: 30,
-    marginTop: 10,
-    // fontWeight: '900'
-  }
-})
-
 export default function GetStartedSection() {
+  const navigation = useNavigation()
   return (
+    // <ImageBackground source={require('../../assets/png/AuthBanner.png')} style={{ flex: 1 }}>
     <Container>
+
       <View style={{ flex: 1, marginTop: 100 }}>
         <View>
           <Heading>Welcome!</Heading>
-          <Text style={styles.heading}>Get a cup of coffee for free only for new user</Text>
+          <SubHeading>Get a cup of coffee for free only for new user</SubHeading>
         </View>
       </View>
+
       <View style={{ flex: 2, alignItems: 'center', justifyContent: 'center' }}>
         <Image source={require("../../assets/png/auth.png")} style={{ height: 300, width: 400, margin: 10 }} />
       </View>
-      <ButtonPrimary>Create New Account</ButtonPrimary>
-      <ButtonSecondary>Login</ButtonSecondary>
+
+      <ButtonPrimary action={() => navigation.navigate('Register')}>Create New Account</ButtonPrimary>
+      <ButtonSecondary action={() => navigation.navigate('Login')}>Login</ButtonSecondary>
     </Container>
+    // </ImageBackground>
+
   )
 }
 

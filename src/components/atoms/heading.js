@@ -15,6 +15,6 @@ const styles = StyleSheet.create({
   heading: {
     fontSize: 50,
     textAlign: 'center',
-    fontWeight: '900'
+    fontWeight: '900',
   }
 })
