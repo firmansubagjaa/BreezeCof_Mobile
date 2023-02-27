@@ -5,10 +5,10 @@ import { StyleSheet } from 'react-native'
 import { Button } from 'react-native'
 
 export default function ButtonPrimary(props) {
-  const { children, title } = props
+  const { children, onpress } = props
   return (
-    <TouchableOpacity style={styles.button}>
-      <Text>{children}</Text>
+    <TouchableOpacity style={styles.button} onPress={onpress} >
+      <Text style={styles.text}>{children}</Text>
     </TouchableOpacity>
   )
 }
@@ -16,8 +16,14 @@ export default function ButtonPrimary(props) {
 const styles = StyleSheet.create({
   button: {
     backgroundColor: "#ffba33",
-    padding: 30,
-    borderRadius: 20,
-    alignItems: 'center'
+    padding: 20,
+    borderRadius: 25,
+    alignItems: 'center',
+    margin: 10,
   },
+
+  text: {
+    fontSize: 17,
+    fontWeight: 'bold',
+  }
 })

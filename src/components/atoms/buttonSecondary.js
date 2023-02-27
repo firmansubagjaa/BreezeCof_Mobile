@@ -5,9 +5,9 @@ import { StyleSheet } from 'react-native'
 import { Button } from 'react-native'
 
 export default function ButtonSecondary(props) {
-  const { children } = props
+  const { children, action } = props
   return (
-    <TouchableOpacity style={styles.button}>
+    <TouchableOpacity style={styles.button} onPress={action}>
       <Text style={styles.textColor}>{children}</Text>
     </TouchableOpacity>
   )
@@ -19,11 +19,12 @@ const styles = StyleSheet.create({
     padding: 20,
     borderRadius: 25,
     alignItems: 'center',
+    margin: 10,
   },
 
   textColor: {
     color: '#ffffff',
-    fontSize: 20,
+    fontSize: 17,
 
   }
 
