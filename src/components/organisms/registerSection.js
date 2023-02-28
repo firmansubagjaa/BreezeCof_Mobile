@@ -2,7 +2,9 @@ import React from 'react'
 import { Image, Text, View } from 'react-native'
 import ButtonLight from '../atoms/buttonLight'
 import ButtonSecondary from '../atoms/buttonSecondary'
-import Heading from '../atoms/heading'
+import Heading1 from '../atoms/heading1'
+import Heading from '../atoms/heading1'
+import Heading2 from '../atoms/heading2'
 import RegisterForm from '../molecules/registerForm'
 import Container from '../templates/viewMain'
 
@@ -14,8 +16,8 @@ export default function RegisterSection() {
         <Image source={require("../../assets/png/register.png")} />
 
         <View style={{ marginLeft: -150, marginBottom: 100 }}>
-          <Heading>Sign</Heading>
-          <Heading>Up</Heading>
+          <Heading1>Sign</Heading1>
+          <Heading1>Up</Heading1>
         </View>
 
       </View>

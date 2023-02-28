@@ -2,7 +2,7 @@ import { useNavigation } from '@react-navigation/native'
 import React from 'react'
 import { Image, View } from 'react-native'
 import ButtonSecondary from '../atoms/buttonSecondary'
-import Heading from '../atoms/heading'
+import Heading1 from '../atoms/heading1'
 import Container from '../templates/viewMain'
 
 
@@ -12,8 +12,8 @@ export default function AuthSection() {
     <Container>
       <View style={{ flex: 1, marginTop: 100 }}>
         <View>
-          <Heading>Coffee for
-            Everyone</Heading>
+          <Heading1>Coffee for
+            Everyone</Heading1>
         </View>
       </View>
       <View style={{ flex: 2, alignItems: 'center' }}>

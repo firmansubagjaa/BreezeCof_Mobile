@@ -1,13 +1,12 @@
 import React from 'react'
 import { StyleSheet } from 'react-native'
 import { Text } from 'react-native'
-import { View } from 'react-native'
 
 
-export default function Heading(props) {
-  const { children } = props
+export default function Heading1(props) {
+  const { children, custom } = props
   return (
-    <Text style={styles.heading}>{children}</Text>
+    <Text style={[styles.heading, { custom }]}>{children}</Text>
   )
 }
 

@@ -4,7 +4,7 @@ import { Text } from 'react-native'
 import { View } from 'react-native'
 
 
-export default function SubHeading(props) {
+export default function Heading3(props) {
   const { children } = props
   return (
     <Text style={styles.heading}>{children}</Text>

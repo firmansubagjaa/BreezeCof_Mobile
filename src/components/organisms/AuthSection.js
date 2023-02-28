@@ -3,8 +3,8 @@ import React from 'react'
 import { Image, View } from 'react-native'
 import ButtonPrimary from '../atoms/buttonPrimary'
 import ButtonSecondary from '../atoms/buttonSecondary'
-import Heading from '../atoms/heading'
-import SubHeading from '../atoms/subHeading'
+import Heading1 from '../atoms/heading1'
+import Heading2 from '../atoms/heading2'
 import Container from '../templates/viewMain'
 
 export default function GetStartedSection() {
@@ -15,8 +15,8 @@ export default function GetStartedSection() {
 
       <View style={{ flex: 1, marginTop: 100 }}>
         <View>
-          <Heading>Welcome!</Heading>
-          <SubHeading>Get a cup of coffee for free only for new user</SubHeading>
+          <Heading1>Welcome!</Heading1>
+          <Heading2>Get a cup of coffee for free only for new user</Heading2>
         </View>
       </View>
 
